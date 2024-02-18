@@ -1,0 +1,22 @@
+import numpy as np
+from scipy.stats import binom
+x = binom.sf(k=np.round(60/100*18), n=18, p=4/6) - binom.sf(k=np.round(20/100*18), n=18, p=4/6)
+
+Certainly! Let's break down the code:
+
+```python
+x = binom.sf(k=np.round(60/100*18), n=18, p=4/6) - binom.sf(k=np.round(20/100*18), n=18, p=4/6)
+```
+
+1. `binom.sf(k=np.round(60/100*18), n=18, p=4/6)`:
+   - `binom` is the name of the module that provides functions related to the binomial distribution.
+   - `sf` stands for "survival function," which is the complementary cumulative distribution function. It gives the probability that a random variable is greater than a certain value.
+   - `k=np.round(60/100*18)` calculates the number of successes (winning rolls) needed to be greater than or equal to 60% of the total number of trials (rolls), which is 18. This expression calculates to 11 when rounded.
+   - `n=18` represents the total number of trials (rolls) in the experiment.
+   - `p=4/6` represents the probability of success on each trial, which is 4/6 or 2/3, assuming a fair six-sided die where rolling 4, 5, or 6 is considered a success.
+
+2. `binom.sf(k=np.round(20/100*18), n=18, p=4/6)`:
+   - Similar to the first part, this calculates the probability of getting fewer than or equal to 20% of wins (3 or less wins out of 18 rounds), which is needed for the cumulative distribution function.
+   - This part is subtracted from the first part to get the probability of winning between 20% and 60% of the rolls.
+
+So, the entire expression calculates the probability of winning between 20% and 60% of the rolls with a fair six-sided die, where rolling a 4, 5, or 6 is considered a win.
