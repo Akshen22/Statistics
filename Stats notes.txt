@@ -1,0 +1,11 @@
+binom.pmf(k=9, n=18, p=4/6):
+
+binom is the name of a module that provides functions related to the binomial distribution in probability theory.
+
+pmf stands for "probability mass function," which is a function that gives the probability that a discrete random variable is exactly equal to some value.
+
+In this case, k=9 represents the number of successes (winning rolls) we are interested in, which is 9.
+
+n=18 represents the total number of trials (rolls) in the experiment, which is 18.
+
+p=4/6 represents the probability of success on each trial, which is 4/6 or 2/3, assuming a fair six-sided die where rolling 4, 5, or 6 is considered a success.
