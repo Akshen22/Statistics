@@ -1,0 +1,23 @@
+Uniform Distribution (Discrete):
+This distribution models the situation where all outcomes are equally likely within a certain range. 
+randint.pmf(k, low, high) 
+calculates the probability of choosing the value `k` as the outcome, where `k` is in the range `[low, high)` (inclusive of `low`, exclusive of `high`).
+
+Example:
+In the code you provided:
+
+from scipy.stats import randint
+req_prob = randint.pmf(k=3, low=1, high=7) + randint.pmf(k=4, low=1, high=7)
+req_prob
+
+
+You are calculating the probability of choosing either 3 or 4 out of the set `{1, 2, 3, 4, 5, 6}` using the `randint.pmf()` function. Here's the breakdown:
+
+- `randint.pmf(k=3, low=1, high=7)` calculates the probability of choosing 3 from the range `[1, 7)` (inclusive of 1, exclusive of 7), which is 1/6 or approximately 0.1667.
+- `randint.pmf(k=4, low=1, high=7)` calculates the probability of choosing 4 from the same range, which is also 1/6 or approximately 0.1667.
+
+Adding these two probabilities together gives:
+
+0.1667 + 0.1667 = 0.3333
+
+So, the output `req_prob` is approximately 0.33, which represents the probability of choosing either 3 or 4 out of the set `{1, 2, 3, 4, 5, 6}`.
