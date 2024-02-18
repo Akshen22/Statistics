@@ -1,0 +1,48 @@
+Poisson Distribution:
+
+This distribution is used to model the number of events occurring in a fixed interval of time or space.
+Example:
+The number of phone calls received at a call center in a minute, the number of accidents at an intersection in a day, or the number of emails received per hour.
+
+scipy.stats.poisson.pmf() calculates the probability mass function.
+scipy.stats.poisson.cdf() calculates the cumulative distribution function.
+scipy.stats.poisson.sf() calculates the survival function (1 - CDF).
+
+Certainly! Let's break down the code step by step:
+
+1. **Importing the `poisson` module from `scipy.stats`**:
+   ```python
+   from scipy.stats import poisson
+   ```
+
+2. **Defining the mean rate of events (`lambda_`) and the number of events (`k`)**:
+   ```python
+   lambda_ = 2.5  # Mean rate of events
+   k = 3          # Number of events
+   ```
+
+3. **Calculating the Probability Mass Function (PMF)**:
+   - The PMF gives the probability of observing exactly `k` events in a Poisson distribution with mean rate `lambda_`.
+   ```python
+   pmf = poisson.pmf(k, lambda_)
+   print(f"The probability of observing exactly {k} events is {pmf:.4f}")
+   ```
+   - In this case, the output will be: "The probability of observing exactly 3 events is 0.2138"
+
+4. **Calculating the Cumulative Distribution Function (CDF)**:
+   - The CDF gives the probability of observing up to `k` events in a Poisson distribution with mean rate `lambda_`.
+   ```python
+   cdf = poisson.cdf(k, lambda_)
+   print(f"The probability of observing up to {k} events is {cdf:.4f}")
+   ```
+   - The output will be: "The probability of observing up to 3 events is 0.7576"
+
+5. **Calculating the Survival Function (SF)**:
+   - The SF gives the probability of observing more than `k` events in a Poisson distribution with mean rate `lambda_`.
+   ```python
+   sf = poisson.sf(k, lambda_)
+   print(f"The probability of observing more than {k} events is {sf:.4f}")
+   ```
+   - The output will be: "The probability of observing more than 3 events is 0.2424"
+
+These calculations help understand the probabilities associated with the Poisson distribution for a given mean rate and number of events.
