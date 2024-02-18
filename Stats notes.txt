@@ -1,0 +1,21 @@
+import numpy as np
+from scipy.stats import binom
+x = binom.cdf(k=np.round(60/100*18), n=18, p=4/6) - binom.cdf(k=np.round(20/100*18), n=18, p=4/6)
+
+Certainly! Let's break down the code:
+
+1. `binom.cdf(k=np.round(60/100*18), n=18, p=4/6)`:
+   - `binom` is again the binomial distribution module.
+   - `cdf` stands for "cumulative distribution function," which gives the probability of getting a value less than or equal to a certain number of successes.
+   - `k=np.round(60/100*18)` calculates the number of successes (rolls won) for which we want to find the cumulative probability. 
+   - Here, `60/100*18` calculates 60% of 18, and `np.round()` rounds the result to the nearest whole number.
+   - `n=18` represents the total number of trials (rolls) in the experiment.
+   - `p=4/6` represents the probability of success on each trial.
+
+2. `binom.cdf(k=np.round(20/100*18), n=18, p=4/6)`:
+   - This is similar to the first part but calculates the cumulative probability for 20% of the total number of rolls.
+
+3. `x = ... - ...`:
+   - Subtracting the cumulative probability for 20% of rolls won from the cumulative probability for 60% of rolls won gives the probability of winning between 20% and 60% of the rolls.
+
+In summary, this code calculates the probability of winning between 20% and 60% of the rolls (inclusive) in a series of 18 rolls with a fair six-sided die, where rolling a 4, 5, or 6 is considered a win.
