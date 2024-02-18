@@ -1,4 +1,3 @@
-
 from scipy.stats import binom
 binom.pmf(k=9, n=18, p=4/6):
 
