@@ -1,0 +1,6 @@
+The Bernoulli distribution is a discrete probability distribution that models a random experiment with two possible outcomes: success (usually denoted as 1) and failure (usually denoted as 0). 
+It is named after the Swiss mathematician Jacob Bernoulli. 
+
+The Bernoulli distribution is commonly used to model situations with binary outcomes, such as coin flips (heads or tails), the success or failure of a single experiment, or the presence or absence of a characteristic.
+
+In Python, you can use the `scipy.stats.bernoulli` module to work with the Bernoulli distribution. The module provides functions to calculate the PMF, cumulative distribution function (CDF), survival function (SF), and other properties of the distribution.
