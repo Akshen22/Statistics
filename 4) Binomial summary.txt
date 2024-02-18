@@ -3,7 +3,6 @@
 # for finding the probability of exact k true
 outcomes out of n total outcomes where the
 probability of true is p
-
 scipy.stats.binomial.pmf(k,n,p)
 
 #other ones
