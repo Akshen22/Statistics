@@ -3,7 +3,7 @@
 Welcome to the Statistics repository! Here, you'll find files that cover various statistical topics. The repository is organized into different categories to help you navigate through the content:
 
 ## Probability Distributions Discrete Distributions (Files 1 to 10)
-- These files explain probability distributions where outcomes are distinct, like the Binomial and Poisson distributions.
+- These files explain probability distributions where outcomes are distinct, like the Binomial, Poisson, and Bernoulli distributions.
 
 ## Probability Distributions Continuous Distributions (Files 11 to 16)
 - These files cover probability distributions where outcomes can take any value within a range, such as the Normal and Exponential distributions.
