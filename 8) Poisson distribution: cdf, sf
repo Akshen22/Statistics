@@ -1,0 +1,21 @@
+1.  Calculating the Cumulative Distribution Function (CDF)**:
+   - The CDF gives the probability of observing up to `k` events in a Poisson distribution with mean rate `lambda_`. 
+   k = 3,
+   lambda_ = 2.5
+   ```python
+   cdf = poisson.cdf(k, lambda_)
+   print(f"The probability of observing up to {k} events is {cdf:.4f}")
+   ```
+   - The output will be: "The probability of observing up to 3 events is 0.7576"
+
+2. **Calculating the Survival Function (SF)**:
+   - The SF gives the probability of observing more than `k` events in a Poisson distribution with mean rate `lambda_`.
+   k = 3,
+   lambda_ = 2.5
+   ```python
+   sf = poisson.sf(k, lambda_)
+   print(f"The probability of observing more than {k} events is {sf:.4f}")
+   ```
+   - The output will be: "The probability of observing more than 3 events is 0.2424"
+
+These calculations help understand the probabilities associated with the Poisson distribution for a given mean rate and number of events.
