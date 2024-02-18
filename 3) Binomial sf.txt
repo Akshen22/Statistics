@@ -1,4 +1,6 @@
-You would use the survival function (SF) when you want to find the probability that a random variable is greater than a certain value. In the context of the binomial distribution and the example you provided, you would use the SF if you wanted to find the probability of winning more than a certain number of rolls.
+You would use the survival function (SF) when you want to find the probability that a random variable is greater than a certain value. 
+In the context of the binomial distribution and the example you provided, you would use the SF if you wanted to find the probability of winning more than a certain number of rolls.
+(1-cdf)=sf
 
 For example, if you wanted to find the probability of winning more than 10 rolls (i.e., winning 11 or more rolls out of 18), you would use the SF:
 
