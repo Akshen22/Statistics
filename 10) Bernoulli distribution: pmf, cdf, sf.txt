@@ -1,0 +1,27 @@
+Certainly! Let's use the Bernoulli distribution to calculate the Probability Mass Function (PMF), Cumulative Distribution Function (CDF), and Survival Function (SF) for a player with a 70% goal rate (p=0.7) scoring a goal (k=1) for a free kick.
+
+```python
+from scipy.stats import bernoulli
+
+# Probability of scoring a goal
+p = 0.7
+
+# Outcome of interest (scoring a goal)
+k = 1
+
+# Probability Mass Function (PMF) - Probability of scoring a goal
+goal_prob = bernoulli.pmf(k=1, p=p)
+print(f"The probability of scoring a goal is {goal_prob:.4f}")
+
+# Cumulative Distribution Function (CDF) - Probability of scoring up to and including 1 goal
+cdf = bernoulli.cdf(k=1, p=p)
+print(f"The probability of scoring up to and including 1 goal is {cdf:.4f}")
+
+# Survival Function (SF) - Probability of scoring more than 1 goal (complement of scoring 0 goals)
+sf = bernoulli.sf(k=0, p=p)
+print(f"The probability of scoring more than 1 goal is {sf:.4f}")
+```
+
+- The PMF calculates the probability of scoring a goal, which is 0.7000 (70%).
+- The CDF calculates the probability of scoring up to and including 1 goal, which is 0.7000 (70%).
+- The SF calculates the probability of scoring more than 1 goal, which is 0.3000 (30%).
