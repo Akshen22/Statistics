@@ -1,7 +1,7 @@
 Uniform Distribution (Discrete):
 This distribution models the situation where all outcomes are equally likely within a certain range. 
 randint.pmf(k, low, high) 
-calculates the probability of choosing the value `k` as the outcome, where `k` is in the range `[low, high)` (inclusive of `low`, exclusive of `high`).
+calculates the probability of choosing the value `k` as the outcome, where `k` is in the range `(low, high)` (inclusive of `low`, exclusive of `high`).
 
 Example:
 In the code you provided:
