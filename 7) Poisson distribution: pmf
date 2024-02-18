@@ -1,6 +1,4 @@
-The Probability Mass Function (PMF) of a Poisson distribution gives the probability of observing a specific number of events (`k`) in a fixed interval of time or space, 
-given the mean rate (`lambda_`) of events occurring in that interval. 
-Here's a detailed explanation of the calculation:
+The Probability Mass Function (PMF) of a Poisson distribution gives the probability of observing a specific number of events (`k`) in a fixed interval of time or space, given the mean rate (`lambda_`) of events occurring in that interval. Here's a detailed explanation of the calculation:
 
 1. **Definition of PMF**:
    - The PMF of a Poisson distribution is given by the formula:
