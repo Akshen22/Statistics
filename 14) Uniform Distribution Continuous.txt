@@ -1,0 +1,40 @@
+In a continuous uniform distribution, all intervals of the same length within the range are equally probable. Here's a brief explanation of the functions you mentioned:
+
+1. pmf (Probability Mass Function):
+   - The pmf gives the probability of observing a value at a specific point in a uniform distribution. 
+   However, for a continuous uniform distribution, the pmf is constant over the range and 0 outside the range. 
+   Therefore, it's more commonly used for discrete distributions.
+
+2. cdf (Cumulative Distribution Function):
+   - The cdf gives the probability that a random variable X will take a value less than or equal to x in a continuous uniform distribution.
+   - For example, to find the probability of a value being less than or equal to 150 in a uniform distribution from 0 to 200:
+
+     ```python
+     import scipy.stats as stats
+
+     cdf_value_less_than_150 = stats.uniform.cdf(150, loc=0, scale=200)
+     print(cdf_value_less_than_150)
+     ```
+     Output: 0.75 (or 75%).
+
+3. sf (Survival Function):
+   - The sf gives the probability that a random variable X will take a value greater than x in a continuous uniform distribution.
+   - For example, to find the probability of a value being greater than 50 in a uniform distribution from 0 to 200:
+
+     ```python
+     sf_value_greater_than_50 = stats.uniform.sf(50, loc=0, scale=200)
+     print(sf_value_greater_than_50)
+     ```
+     Output: 0.75 (or 75%).
+
+4. Probability of a Range:
+   - To find the probability of a range of values in a continuous uniform distribution, you can subtract the cumulative probabilities at the two endpoints of the range.
+   - For example, to find the probability of a value between 50 and 150 in a uniform distribution from 0 to 200:
+
+     ```python
+     prob_50_to_150 = stats.uniform.cdf(150, loc=0, scale=200) - stats.uniform.cdf(50, loc=0, scale=200)
+     print(prob_50_to_150)
+     ```
+     Output: 0.5 (or 50%).
+
+These functions help us understand the likelihood of different values occurring in a continuous uniform distribution and are useful for making probabilistic statements about the data.
