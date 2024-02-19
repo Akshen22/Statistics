@@ -9,7 +9,7 @@ Welcome to the Statistics repository! Here, you'll find files that cover various
 - These files cover probability distributions where outcomes can take any value within a range, such as the Normal and Exponential distributions.
 
 ## Sampling (File 15)
-- Learn about different sampling techniques used to collect data, including random sampling and stratified sampling.
+- random.choice(), random.sample()
 
 ## Confidence Interval (Files 16 to 20)
 - Understand how to calculate and interpret confidence intervals, which help estimate population parameters.
