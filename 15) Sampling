@@ -1,0 +1,18 @@
+Sampling is a process of selecting a subset of individuals or items from a larger population to make inferences about the population. 
+Two common methods of sampling are:
+
+1. Sampling with Replacement (random.choices()):
+   - In this method, each item in the population can be selected more than once in the sample.
+   - It is useful when you want to allow the same item to be selected multiple times in a sample.
+   - For example, if you are simulating a scenario where you draw a card from a deck, replace it, and draw again, you would use sampling with replacement.
+
+2. Sampling without Replacement (random.sample()):
+   - In this method, once an item is selected in the sample, it is not available for selection again.
+   - It is useful when you want to ensure that each item is selected only once in the sample.
+   - For example, if you are selecting students for a survey and you want to ensure that each student is selected only once, you would use sampling without replacement.
+
+The formula you provided is for estimating the number of desired outcomes (x) in a population (N) based on a sample (n) where x out of n samples are the desired outcome. 
+This formula assumes that the sample is representative of the population and can be used to estimate the total number of desired outcomes in the population.
+
+In your example, if you have a population of 50 and you draw a sample of 13 where 8 samples are the desired outcome, you can estimate the total number of desired outcomes in the population as N*(x/n). 
+So, in this case, it would be: 50*(8/13).
