@@ -1,0 +1,21 @@
+Here's a brief explanation of each concept related to the Normal Distribution:
+
+1. pdf (Probability Density Function):
+   - The pdf gives the probability density at a specific point (x) in a normal distribution.
+   - For a continuous distribution, the probability at a single point is technically zero, but the pdf gives the density of probability around that point.
+
+2. Calculating z-score:
+   - To use the normal distribution for calculations, we often standardize the values using the z-score formula: z = (x-mu)/sigma.
+   - Here,  x is the value we're interested in, the mean is denoted by mu, and the standard deviation by sigma.
+   - The z-score tells us how many standard deviations a value is from the mean.
+
+3. cdf (Cumulative Distribution Function):
+   - The cdf gives the probability that a random variable X will take a value less than or equal to x in a normal distribution.
+   - It represents the area under the normal curve to the left of x.
+
+4. sf (Survival Function):
+   - The sf gives the probability that a random variable X will take a value greater than x in a normal distribution.
+   - It's the complement of the cdf, i.e.,  1 - cdf.
+
+In summary, the pdf gives the density of probability at a point, the cdf gives the probability up to that point, and the sf gives the probability beyond that point. 
+These functions are used to calculate probabilities and make inferences about data in a normal distribution.
