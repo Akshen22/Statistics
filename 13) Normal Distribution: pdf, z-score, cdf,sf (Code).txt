@@ -1,0 +1,53 @@
+Let's consider an example where we have a normal distribution with 
+a mean (average) of 100,
+a standard deviation of 10. 
+We want to calculate the probability of a value being less than 95 and the probability of a value being greater than 110.
+
+1. Probability Density Function (pdf):
+   - The pdf gives the probability density at a specific point. Since the probability at a single point in a continuous distribution is technically zero, 
+   the pdf gives us the density of probability around that point.
+   - For example, the pdf at x=100 would be calculated as follows:
+
+     ```python
+     import scipy.stats as stats
+
+     mean = 100
+     std_dev = 10
+     x = 100
+     pdf_value = stats.norm.pdf(x, loc=mean, scale=std_dev)
+     print(pdf_value)
+     ```
+     Output: The output would be 0.04 value indicating the density of the probability at x=100.
+
+2. Calculating z-score:
+   - To calculate the z-score for a specific value, we use the formula: z = (x - mean)/std deviation.
+   - For example, if we want to find the z-score for a value of 95:
+
+     ```python
+     x = 95
+     z = (x - mean) / std_dev
+     print(z)
+     ```
+     Output: -0.5 (indicating that 95 is 0.5 standard deviations below the mean).
+
+3. Cumulative Distribution Function (cdf):
+   - The cdf gives the probability that a random variable X will take a value less than or equal to x in a normal distribution.
+   - For example, to find the probability of a value being less than 95:
+
+     ```python
+     cdf_value_less_than_95 = stats.norm.cdf(95, loc=mean, scale=std_dev)
+     print(cdf_value_less_than_95)
+     ```
+     Output: 0.3085375387259869 (approximately 30.85%).
+
+4. Survival Function (sf):
+   - The sf gives the probability that a random variable X will take a value greater than x in a normal distribution.
+   - For example, to find the probability of a value being greater than 110:
+
+     ```python
+     sf_value_greater_than_110 = stats.norm.sf(110, loc=mean, scale=std_dev)
+     print(sf_value_greater_than_110)
+     ```
+     Output: 0.15865525393145707 (approximately 15.87%).
+
+These calculations help us understand the distribution of values and make probabilistic statements about the data in a normal distribution.
