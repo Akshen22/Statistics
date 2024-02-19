@@ -5,10 +5,10 @@ Welcome to the Statistics repository! Here, you'll find files that cover various
 ## Probability Distributions: Discrete Distributions (Files 1 to 11)
 - These files explain probability distributions where outcomes are discrete, like the Binomial, Poisson, and Bernoulli distributions.
 
-## Probability Distributions: Continuous Distributions (Files 12 to 16)
+## Probability Distributions: Continuous Distributions (Files 12 to 14)
 - These files cover probability distributions where outcomes can take any value within a range, such as the Normal and Exponential distributions.
 
-## Sampling (Files 16 to 20)
+## Sampling (File 15)
 - Learn about different sampling techniques used to collect data, including random sampling and stratified sampling.
 
 ## Confidence Interval (Files 16 to 20)
