@@ -3,14 +3,18 @@ Here's a brief overview of each with a real-life example for better understandin
 
 1. Binomial Distribution:
    - Definition: The binomial distribution describes the number of successes in a fixed number of independent Bernoulli trials, where each trial has a constant probability of success.
-   - Example: Suppose you flip a fair coin 10 times and want to know the probability of getting exactly 5 heads. This can be modeled using a binomial distribution, where each coin flip is a Bernoulli trial (success = heads, failure = tails), and the number of heads in 10 flips follows a binomial distribution.
+   - Example: Suppose you flip a fair coin 10 times and want to know the probability of getting exactly 5 heads. This can be modeled using a binomial distribution, 
+   where each coin flip is a Bernoulli trial (success = heads, failure = tails), and the number of heads in 10 flips follows a binomial distribution.
 
 2. Poisson Distribution:
    - Definition: The Poisson distribution models the number of events occurring in a fixed interval of time or space, given a constant average rate of occurrence and the events happening independently of the time since the last event.
-   - Example: Suppose you are studying the number of customer arrivals at a store per hour, and you find that on average, 10 customers arrive per hour. You can use a Poisson distribution to model the number of customers arriving in any given hour.
+   - Example: Suppose you are studying the number of customer arrivals at a store per hour, and you find that on average, 10 customers arrive per hour. 
+   You can use a Poisson distribution to model the number of customers arriving at any given hour.
 
 3. Bernoulli Distribution:
    - Definition: The Bernoulli distribution is a special case of the binomial distribution where there is only one trial. It describes a random variable that can take on one of two possible outcomes (usually labeled as 0 and 1), with a fixed probability of success.
-   - Example: Consider a single toss of a biased coin where the probability of getting heads is 0.3. Here, the outcome can be modeled using a Bernoulli distribution, where success (1) is getting heads and failure (0) is getting tails.
+   - Example: Consider a single toss of a biased coin where the probability of getting heads is 0.3. Here, the outcome can be modeled using a Bernoulli distribution, 
+              where success (1) is getting heads and failure (0) is getting tails.
 
-Real-life examples often involve situations where we are interested in the number of occurrences of an event (like the number of emails received per day, number of cars passing through a toll booth in an hour) or whether an event occurs or not (like whether a person buys a product after seeing an advertisement). These distributions help us understand and model such scenarios.
+Real-life examples often involve situations where we are interested in the number of occurrences of an event (like the number of emails received per day, number of cars passing through a toll booth in an hour) 
+or whether an event occurs or not (like whether a person buys a product after seeing an advertisement). These distributions help us understand and model such scenarios.
