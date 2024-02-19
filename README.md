@@ -2,7 +2,7 @@
 
 Welcome to the Statistics repository! Here, you'll find files that cover various statistical topics. The repository is organized into different categories to help you navigate through the content:
 
-## Probability Distributions Discrete Distributions (Files 1 to 10)
+## Probability Distributions Discrete Distributions (Files 1 to 11)
 - These files explain probability distributions where outcomes are discrete, like the Binomial, Poisson, and Bernoulli distributions.
 
 ## Probability Distributions Continuous Distributions (Files 11 to 16)
